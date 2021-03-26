@@ -22,18 +22,24 @@ class Cookbook
     save_to_csv
   end
 
+  def update_csv
+    save_to_csv
+  end
+
   private
 
   def load_from_csv(csv_file_path)
     CSV.foreach(csv_file_path) do |row|
-      @recipes << Recipe.new(row[0],row[1])
+      recipe = Recipe.new(row[0], row[1])
+      recipe.done! if row[2] == 'true'
+      @recipes << recipe
     end
   end
 
   def save_to_csv
     CSV.open(@csv_file, 'wb') do |csv|
       @recipes.each do |recipe|
-        csv << [recipe.name, recipe.description]
+        csv << [recipe.name, recipe.description, recipe.done?]
       end
     end
   end

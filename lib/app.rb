@@ -9,5 +9,3 @@ cookbook_controller = CookbookController.new(cookbook)
 router = Router.new(cookbook_controller)
 
 router.run
-
-# recipe = Recipe.new('potatoes', 'lots of potatoes')

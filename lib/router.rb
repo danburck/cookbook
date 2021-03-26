@@ -5,8 +5,8 @@ class Router
   end
 
   def run
-    puts 'Welcome to the Cookbook👩‍🍳👨‍🍳'
-    puts '-----------------------'
+    puts ' -- 👩‍🍳👨‍🍳 My CookBook 👩‍🍳👨‍🍳 --'
+
     while @running
       display_tasks
       action = gets.chomp.to_i
@@ -21,10 +21,12 @@ class Router
 
   def display_tasks
     puts 'What would you like to do?'
+    puts ''
     puts '1 - List all recipes'
     puts '2 - Create a new recipe'
     puts '3 - Remove a recipe'
-    puts '100 - Close cookbook'
+    puts "4 - Mark recipe as 'done'"
+    puts '100 - Exit'
   end
 
   def route_action(action)
@@ -32,6 +34,7 @@ class Router
       when 1 then @controller.list
       when 2 then @controller.create
       when 3 then @controller.destroy
+      when 4 then @controller.mark_as_done
       when 100 then stop
       else
         puts 'Please choose one of the actions above.'
@@ -39,7 +42,7 @@ class Router
   end
 
   def stop
-    puts 'Good bye 👋'
+    puts 'Good bye chef 👋'
     sleep(1)
     @running = false
   end

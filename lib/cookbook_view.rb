@@ -1,7 +1,8 @@
 class CookbookView
   def display(recipes)
     recipes.each_with_index do |recipe, index|
-      puts "#{index + 1} - #{recipe.name} - #{recipe.description}"
+      x = recipe.done? ? '[x]' : '[ ]'
+      puts "#{index + 1}. #{x} #{recipe.name} - #{recipe.description}"
     end
   end
 

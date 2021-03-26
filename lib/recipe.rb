@@ -3,5 +3,14 @@ class Recipe
   def initialize(name, description)
     @name = name
     @description = description
+    @done = false
+  end
+
+  def done?
+    @done
+  end
+
+  def done!
+    @done = true
   end
 end
