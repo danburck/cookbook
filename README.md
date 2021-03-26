@@ -1,5 +1,5 @@
 # cookbook
-`cookbook` is a non-gui app to manage your recipes in the terminal, written in ruby only.
+`cookbook` is a non-gui app to manage your recipes in the terminal and them in a csv file. It is written in ruby only and follows the MVC pattern
 
 ## Features
 * create a recipe
