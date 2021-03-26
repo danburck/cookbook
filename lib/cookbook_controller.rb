@@ -17,4 +17,10 @@ class CookbookController
     recipe = Recipe.new(name, description)
     @cookbook.add_recipe(recipe)
   end
+
+  def destroy
+    list
+    recipe_index = @view.ask_for('recipe number you would like to destroy')
+    @cookbook.remove_recipe(recipe_index.to_i - 1)
+  end
 end
