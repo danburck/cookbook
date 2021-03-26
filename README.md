@@ -8,6 +8,9 @@
 * mark a recipe as `done`
 
 
+<img width="368" alt="Screen Shot 2021-03-26 at 19 15 05" src="https://user-images.githubusercontent.com/33006856/112675559-98b97a00-8e67-11eb-9ecd-14f752080f99.png">
+
+
 ## Install
 ### Clone the repository
 ```
@@ -31,4 +34,3 @@ Start the app with ruby:
 ruby lib/app.rb
 ```
 
-<img width="368" alt="Screen Shot 2021-03-26 at 19 15 05" src="https://user-images.githubusercontent.com/33006856/112675559-98b97a00-8e67-11eb-9ecd-14f752080f99.png">
