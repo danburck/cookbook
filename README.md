@@ -14,23 +14,27 @@
 ## Install
 ### Clone the repository
 ```
-git clone git@github.com:danburck/cookbook.git
-cd project
+$ git clone git@github.com:danburck/cookbook.git
+$ cd project
 ```
 ### Check your Ruby version
 ```
-ruby -v
+$ ruby -v
 ```
 The ouput should start with something like ruby 2.5.1
 
 If not, install the right ruby version using [rbenv](https://github.com/rbenv/rbenv) (it could take a while):
 ```
-rbenv install 2.5.1
+$ rbenv install 2.5.1
 ```
 
 ## Usage
 Start the app with ruby:
 ```
-ruby lib/app.rb
+$ ruby lib/app.rb
 ```
 
+Run unit tests with rspec:
+```
+$ rspec
+```
