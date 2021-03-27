@@ -31,13 +31,13 @@ class Router
 
   def route_action(action)
     case action
-      when 1 then @controller.list
-      when 2 then @controller.create
-      when 3 then @controller.destroy
-      when 4 then @controller.mark_as_done
-      when 100 then stop
-      else
-        puts 'Please choose one of the actions above.'
+    when 1 then @controller.list
+    when 2 then @controller.create
+    when 3 then @controller.destroy
+    when 4 then @controller.mark_as_done
+    when 100 then stop
+    else
+      puts 'Please choose one of the actions above.'
     end
   end
 
