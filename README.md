@@ -1,4 +1,6 @@
 # cookbook
+<img width="368" alt="Screen Shot 2021-03-26 at 19 15 05" src="https://user-images.githubusercontent.com/33006856/112675559-98b97a00-8e67-11eb-9ecd-14f752080f99.png">
+
 `cookbook` is a non-gui app to manage your recipes in the terminal and them in a csv file. It is written in ruby only and follows the MVC pattern
 
 ## Features
@@ -8,7 +10,7 @@
 * mark a recipe as `done`
 
 
-<img width="368" alt="Screen Shot 2021-03-26 at 19 15 05" src="https://user-images.githubusercontent.com/33006856/112675559-98b97a00-8e67-11eb-9ecd-14f752080f99.png">
+
 
 
 ## Installation
